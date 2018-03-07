@@ -1,6 +1,6 @@
 {
     "version": "6.2.3",
-    "name": "react-native-svg",
+    "name": "@applicaster/react-native-svg",
     "description": "SVG library for react-native",
     "repository": {
         "type": "git",
