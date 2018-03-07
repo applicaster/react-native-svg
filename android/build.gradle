@@ -26,6 +26,20 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
 }
 
 repositories {
@@ -39,5 +53,5 @@ repositories {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    provided 'com.facebook.react:react-native:+'
+    compileOnly 'com.facebook.react:react-native:+'
 }
