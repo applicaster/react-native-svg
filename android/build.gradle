@@ -56,5 +56,5 @@ repositories {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    implementation "com.facebook.react:react-native:${safeExtGet('reactnativeVersion', '+')}"
+    compileOnly "com.facebook.react:react-native:${safeExtGet('reactnativeVersion', '+')}"
 }
