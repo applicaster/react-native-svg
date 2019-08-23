@@ -1,3 +1,21 @@
+## Applicaster notest
+
+react-native-svg
+react-native-svg has to be updated to work with new react native version.
+
+Add dependencey to package.json for the master branch:
+
+```json
+"@applicaster/react-native-svg": "9.6.4"
+```
+
+Downgrade dependency backward in the master_legacy branch:
+
+```json
+"@applicaster/react-native-svg": "6.3.0"
+```
+
+
 ## react-native-svg
 
 [![Version](https://img.shields.io/npm/v/react-native-svg.svg)](https://www.npmjs.com/package/react-native-svg)
