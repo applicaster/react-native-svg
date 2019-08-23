@@ -1,3 +1,50 @@
+## Applicaster notest
+
+### Adding svg package to your RN component:
+For package to correctly install the native dependencies, during build phase, you need to add following lines to your plugin manifests:
+
+**iOS**
+```json
+{
+  "api": {
+    "react_packages": ["com.horcrux.svg.SvgPackage"]
+  },
+  "npm_dependencies": ["@applicaster/react-native-svg@x.x.x"],
+  "extra_dependencies": [
+    {
+      "RNSVG": ":path =\u003e 'node_modules/@applicaster/react-native-svg'"
+    }
+  ]
+}
+```
+
+
+**Android**
+```json
+{
+  "api": {
+    "react_packages": ["com.horcrux.svg.SvgPackage"]
+  },
+  "npm_dependencies": ["@applicaster/react-native-svg@x.x.x"],
+  "project_dependencies": [
+    {
+      "react-native-svg": "node_modules/@applicaster/react-native-svg/android"
+    }
+  ]
+}
+```
+
+
+
+### Applicaster supported versions:
+
+| Plugin Version | React-Native Version |
+|----------------|----------------------|
+| 6.3.0          | 0.50.4               |
+| 6.3.0          | 0.57.x               |
+| 9.6.4          | 0.59.10              |
+
+
 ## react-native-svg
 
 [![Version](https://img.shields.io/npm/v/react-native-svg.svg)](https://www.npmjs.com/package/react-native-svg)
